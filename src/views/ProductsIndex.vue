@@ -30,6 +30,7 @@ export default {
     };
   },
   created: function() {
+    console.log(localStorage["jwt"]);
     axios
     .get("http://localhost:3000/api/products")
     .then(response => {
